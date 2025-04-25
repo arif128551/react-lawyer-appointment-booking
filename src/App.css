@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-mulish: "Mulish", sans-serif;
+  --color-c0ea106: #0EA106;
+  --color-c176ae5: #176AE5;
+  --color-c0f0f0f: #0F0F0F;
+}
+
+body {
+  font-family: var(--font-mulish);
+}
