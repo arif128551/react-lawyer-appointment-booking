@@ -1,9 +1,10 @@
 import React from "react";
 import logoImg from "../assets/logo.png";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useLocation } from "react-router";
 const Header = () => {
+	const location = useLocation();
 	return (
-		<div>
+		<div className={`${location.pathname === "/" ? "" : "border-b border-c0f0f0f/15"}`}>
 			<div className="navbar container mx-auto max-w-7xl py-7">
 				<div className="navbar-start">
 					<div className="dropdown">

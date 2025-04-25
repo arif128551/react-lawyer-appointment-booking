@@ -5,6 +5,7 @@ import Loader from "../components/ui/Loader";
 import Home from "../Pages/Home";
 import MyBookings from "../Pages/MyBookings";
 import Blogs from "../Pages/Blogs";
+import LawyersProfile from "../Pages/LawyersProfile";
 export const router = createBrowserRouter([
 	{
 		path: "/",
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
 				Component: Home,
 				hydrateFallbackElement: <Loader />,
 			},
+			{ path: "/lawyer/profile", Component: LawyersProfile, hydrateFallbackElement: <Loader /> },
 			{
 				path: "/my-bookings",
 				Component: MyBookings,
